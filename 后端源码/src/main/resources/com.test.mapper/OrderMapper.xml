@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.mapper.OrderMapper">
+
+    <select id="countOrdersByTimeRange" resultType="Integer">
+        SELECT COUNT(*)
+        FROM `order`
+        WHERE create_time BETWEEN #{startTime} AND #{endTime}
+          AND is_delete = 0
+    </select>
+
+    <select id="countFinishedOrdersByTimeRange" resultType="Integer">
+        SELECT COUNT(*)
+        FROM `order`
+        WHERE create_time BETWEEN #{startTime} AND #{endTime}
+          AND shipping_status = 2
+          AND is_delete = 0
+    </select>
+
+    <select id="sumIncomeByTimeRange" resultType="BigDecimal">
+        SELECT COALESCE(SUM(order_total_price), 0)
+        FROM `order`
+        WHERE create_time BETWEEN #{startTime} AND #{endTime}
+          AND is_delete = 0
+    </select>
+
+    <!-- OrderMapper.xml -->
+    <select id="countOrdersByExpress" resultType="com.test.model.Return.ExpressDistributionItem">
+        SELECT
+            e.express_name as expressName,
+            COUNT(*) as count,
+        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2) as percentage
+        FROM `order` o
+            JOIN express e ON o.express_code COLLATE utf8mb4_general_ci = e.delivery_type COLLATE utf8mb4_general_ci
+        WHERE o.create_time BETWEEN #{startTime} AND #{endTime}
+          AND o.is_delete = 0
+        GROUP BY e.express_name
+    </select>
+    <select id="countPendingOrders" resultType="Integer">
+        SELECT COUNT(*)
+        FROM `order`
+        WHERE order_status = 0
+          AND is_delete = 0
+    </select>
+
+</mapper> 

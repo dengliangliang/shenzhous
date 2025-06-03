@@ -1,0 +1,1 @@
+<view class="express-container"><view class="content"><view class="title">快递服务协议</view><view class="content-text">{{content}}</view></view></view>

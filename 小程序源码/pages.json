@@ -1,0 +1,326 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/forgot-password",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/agreement/user-agreement",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FF6B01",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "60px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"text": "订单",
+				"iconPath": "static/tabbar/order.png",
+				"selectedIconPath": "static/tabbar/order-active.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my-active.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "神州邮",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F5F5F5"
+	},
+	"subPackages": [{
+		"root": "views",
+		"pages": [{
+				"path": "editProfile/editProfile",
+				"style": {
+					"navigationBarTitleText": "个人信息管理"
+				}
+			},
+			{
+				"path": "changePassword/changePassword",
+				"style": {
+					"navigationBarTitleText": "修改密码"
+				}
+			},
+			{
+				"path": "address/address",
+				"style": {
+					"navigationBarTitleText": "用户地址管理"
+				}
+			},
+			{
+				"path": "address/edit",
+				"style": {
+					"navigationBarTitleText": "编辑地址"
+				}
+			},
+			{
+				"path": "invoiceTile/invoiceTile",
+				"style": {
+					"navigationBarTitleText": "用户发票抬头管理"
+				}
+			},
+			{
+				"path": "invoiceTile/edit",
+				"style": {
+					"navigationBarTitleText": "编辑发票抬头"
+				}
+			},
+			{
+				"path": "invoice/invoice",
+				"style": {
+					"navigationBarTitleText": "电子发票",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "invoice/apply",
+				"style": {
+					"navigationBarTitleText": "申请发票"
+				}
+			},
+			{
+				"path": "monthly/monthly",
+				"style": {
+					"navigationBarTitleText": "月结资格"
+				}
+			},
+			{
+				"path": "monthly/details",
+				"style": {
+					"navigationBarTitleText": "月结资格详情"
+				}
+			},
+			{
+				"path": "monthly/apply",
+				"style": {
+					"navigationBarTitleText": "月结资格申请"
+				}
+			},
+			{
+				"path": "monthly/applyDetails",
+				"style": {
+					"navigationBarTitleText": "申请详情"
+				}
+			},
+			{
+				"path": "monthly/users",
+				"style": {
+					"navigationBarTitleText": "使用用户"
+				}
+			},
+			{
+				"path": "monthly/statement",
+				"style": {
+					"navigationBarTitleText": "月结账单"
+				}
+			},
+			{
+				"path": "monthly/statement-detail",
+				"style": {
+					"navigationBarTitleText": "月结账单详情"
+				}
+			},
+			{
+				"path": "commissionFlow/commissionFlow",
+				"style": {
+					"navigationBarTitleText": "佣金流动"
+				}
+			},
+			{
+				"path": "auth/auth",
+				"style": {
+					"navigationBarTitleText": "实名认证"
+				}
+			},
+			{
+				"path": "agent/invite",
+				"style": {
+					"navigationBarTitleText": "邀请好友"
+				}
+			},
+			{
+				"path": "postal/query",
+				"style": {
+					"navigationBarTitleText": "邮政编码"
+				}
+			},
+			{
+				"path": "order/detail",
+				"style": {
+					"navigationBarTitleText": "订单详情"
+				}
+			},
+			{
+				"path": "express/batch",
+				"style": {
+					"navigationBarTitleText": "批量寄件"
+				}
+			},
+			{
+				"path": "express/batch-order-edit",
+				"style": {
+					"navigationBarTitleText": "编辑批量寄件"
+				}
+			},
+			{
+				"path": "express/send",
+				"style": {
+					"navigationBarTitleText": "寄快递"
+				}
+			},
+			{
+				"path": "express/cargo",
+				"style": {
+					"navigationBarTitleText": "快运"
+				}
+			},
+			{
+				"path": "order/logistics",
+				"style": {
+					"navigationBarTitleText": "查看物流"
+				}
+			},
+			{
+				"path": "notice/list",
+				"style": {
+					"navigationBarTitleText": "公告列表"
+				}
+			},
+			{
+				"path": "notice/detail",
+				"style": {
+					"navigationBarTitleText": "公告详情"
+				}
+			},
+			{
+				"path": "help/help",
+				"style": {
+					"navigationBarTitleText": "帮助中心"
+				}
+			},
+			{
+				"path": "settings/settings",
+				"style": {
+					"navigationBarTitleText": "系统设置"
+				}
+			},
+			{
+				"path": "about/about",
+				"style": {
+					"navigationBarTitleText": "关于我们"
+				}
+			},
+			{
+				"path": "agreement/agreement",
+				"style": {
+					"navigationBarTitleText": "用户协议"
+				}
+			},
+			{
+				"path": "privacy/privacy",
+				"style": {
+					"navigationBarTitleText": "隐私政策"
+				}
+			},
+			{
+				"path": "prohibited/prohibited",
+				"style": {
+					"navigationBarTitleText": "违禁品说明"
+				}
+			},
+			{
+				"path": "express/express",
+				"style": {
+					"navigationBarTitleText": "快递协议"
+				}
+			},
+			{
+				"path": "share/share",
+				"style": {
+					"navigationBarTitleText": "分享好友"
+				}
+			},
+			{
+				"path": "service/service",
+				"style": {
+					"navigationBarTitleText": "在线客服"
+				}
+			},
+			{
+				"path": "feedback/feedback",
+				"style": {
+					"navigationBarTitleText": "意见反馈"
+				}
+			},
+			{
+				"path": "invoice/invoice-detail",
+				"style": {
+					"navigationBarTitleText": "发票详情"
+				}
+			},
+			{
+				"path": "monthlyService/monthlyService",
+				"style": {
+					"navigationBarTitleText": "月结服务协议"
+				}
+			}
+		]
+	}],
+	"uniIdRouter": {},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"scanCode": {
+		"needResult": 1,
+		"scanType": ["qrCode"]
+	}
+}

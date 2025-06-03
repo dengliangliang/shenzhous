@@ -1,0 +1,1 @@
+<view class="prohibited-container"><view class="content"><view class="title">违禁品说明</view><view class="content-text">{{content}}</view></view></view>

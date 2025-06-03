@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+@font-face {
+  font-family: "iconfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,...'); /* 这里需要你的字体图标base64编码 */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-phone:before {
+  content: "\e604";
+}
+.icon-password:before {
+  content: "\e605";
+}
+.icon-eye:before {
+  content: "\e606";
+}
+.icon-eye-close:before {
+  content: "\e607";
+}
+.icon-wechat:before {
+  content: "\e608";
+}
+/* 添加一些全局过渡效果 */
+page {
+	background: #fff;
+}
+/* 统一动画过渡 */
+.animate-transition {
+	transition: all 0.3s ease;
+}
+/* 添加 animate.css 核心动画类 */
+.animate__animated {
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+.animate__fadeIn {
+	-webkit-animation-name: fadeIn;
+	        animation-name: fadeIn;
+}
+.animate__fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	        animation-name: fadeInDown;
+}
+.animate__fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	        animation-name: fadeInUp;
+}
+.animate__delay-1s {
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+}
+/* 动画关键帧 */
+@-webkit-keyframes fadeIn {
+from {
+		opacity: 0;
+}
+to {
+		opacity: 1;
+}
+}
+@keyframes fadeIn {
+from {
+		opacity: 0;
+}
+to {
+		opacity: 1;
+}
+}
+@-webkit-keyframes fadeInDown {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		        transform: translate3d(0, -100%, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+@keyframes fadeInDown {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		        transform: translate3d(0, -100%, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+@-webkit-keyframes fadeInUp {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		        transform: translate3d(0, 100%, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+@keyframes fadeInUp {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		        transform: translate3d(0, 100%, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+/* 添加新的动画 */
+.animate__fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	        animation-name: fadeInLeft;
+}
+.animate__fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	        animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeInLeft {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		        transform: translate3d(-100%, 0, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+@keyframes fadeInLeft {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		        transform: translate3d(-100%, 0, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+@-webkit-keyframes fadeInRight {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		        transform: translate3d(100%, 0, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+@keyframes fadeInRight {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		        transform: translate3d(100%, 0, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+}
+}
+

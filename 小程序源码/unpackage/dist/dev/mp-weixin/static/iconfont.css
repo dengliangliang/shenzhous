@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,...'); /* 这里需要你的字体图标base64编码 */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e604";
+}
+
+.icon-password:before {
+  content: "\e605"; 
+}
+
+.icon-eye:before {
+  content: "\e606";
+}
+
+.icon-eye-close:before {
+  content: "\e607";
+}
+
+.icon-wechat:before {
+  content: "\e608";
+} 

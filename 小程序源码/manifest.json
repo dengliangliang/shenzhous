@@ -1,0 +1,53 @@
+{
+    "name": "ShenzhouPost",
+    "appid": "",
+    "versionName": "1.0.0",
+    "versionCode": "100",
+    "transformPx": false,
+    "app-plus": {
+        "usingComponents": true,
+        "nvueStyleCompiler": "uni-app",
+        "compilerVersion": 3,
+        "splashscreen": {
+            "alwaysShowBeforeRender": true,
+            "waiting": true,
+            "autoclose": true,
+            "delay": 0
+        },
+        "modules": {},
+        "distribute": {
+            "android": {
+                "permissions": [
+                    "ACCESS_NETWORK_STATE",
+                    "ACCESS_WIFI_STATE",
+                    "CAMERA",
+                    "VIBRATE"
+                ]
+            },
+            "ios": {
+                "privacyDescription": {
+                    "NSLocationWhenInUseUsageDescription": "需要您的位置信息以提供附近服务",
+                    "NSCameraUsageDescription": "需要相机权限用于扫描快递单号"
+                }
+            },
+            "sdkConfigs": {}
+        }
+    },
+    "mp-weixin": {
+        "appid": "wx2dfe755086f4af5e",
+        "setting": {
+            "urlCheck": false
+        },
+        "requiredBackgroundModes": ["audio"],
+        "permission": {
+            "scope.userFuzzyLocation": {
+                "desc": "需要获取您的大致位置信息以展示附近服务"
+            }
+        },
+        "shareTimeline": {}
+    },
+    "mp-alipay": {
+        "usingComponents": true
+    },
+    "vueVersion": "2"
+}

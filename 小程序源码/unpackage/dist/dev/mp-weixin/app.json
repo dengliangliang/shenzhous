@@ -1,0 +1,104 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/login/forgot-password",
+    "pages/order/order",
+    "pages/mine/mine",
+    "pages/agreement/user-agreement"
+  ],
+  "subPackages": [
+    {
+      "root": "views",
+      "pages": [
+        "editProfile/editProfile",
+        "changePassword/changePassword",
+        "address/address",
+        "address/edit",
+        "invoiceTile/invoiceTile",
+        "invoiceTile/edit",
+        "invoice/invoice",
+        "invoice/apply",
+        "monthly/monthly",
+        "monthly/details",
+        "monthly/apply",
+        "monthly/applyDetails",
+        "monthly/users",
+        "monthly/statement",
+        "monthly/statement-detail",
+        "commissionFlow/commissionFlow",
+        "auth/auth",
+        "agent/invite",
+        "postal/query",
+        "order/detail",
+        "express/batch",
+        "express/batch-order-edit",
+        "express/send",
+        "express/cargo",
+        "order/logistics",
+        "notice/list",
+        "notice/detail",
+        "help/help",
+        "settings/settings",
+        "about/about",
+        "agreement/agreement",
+        "privacy/privacy",
+        "prohibited/prohibited",
+        "express/express",
+        "share/share",
+        "service/service",
+        "feedback/feedback",
+        "invoice/invoice-detail",
+        "monthlyService/monthlyService"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "神州邮",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F5F5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF6B01",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "60px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "static/tabbar/order.png",
+        "selectedIconPath": "static/tabbar/order-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my-active.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "permission": {
+    "scope.userFuzzyLocation": {
+      "desc": "需要获取您的大致位置信息以展示附近服务"
+    }
+  },
+  "shareTimeline": {},
+  "usingComponents": {
+    "uni-icons": "/node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"
+  }
+}

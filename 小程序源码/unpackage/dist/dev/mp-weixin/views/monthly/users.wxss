@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.users-container.data-v-cecc39f2 {
+  min-height: 100vh;
+  background-color: #F5F6FA;
+  padding: 20rpx 0;
+}
+.users-container .statistics-card.data-v-cecc39f2 {
+  margin: 0 30rpx 20rpx;
+  background: linear-gradient(135deg, #FF6B01, #FF9C01);
+  border-radius: 16rpx;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4rpx 20rpx rgba(255, 107, 1, 0.2);
+}
+.users-container .statistics-card .stat-item.data-v-cecc39f2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.users-container .statistics-card .stat-item .number.data-v-cecc39f2 {
+  font-size: 48rpx;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 8rpx;
+}
+.users-container .statistics-card .stat-item .label.data-v-cecc39f2 {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.9);
+}
+.users-container .statistics-card .divider.data-v-cecc39f2 {
+  width: 2rpx;
+  height: 60rpx;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.users-container .user-list.data-v-cecc39f2 {
+  height: calc(100vh - 200rpx);
+}
+.users-container .user-list .list-header.data-v-cecc39f2 {
+  padding: 20rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.users-container .user-list .list-header .title.data-v-cecc39f2 {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+}
+.users-container .user-list .list-header .subtitle.data-v-cecc39f2 {
+  font-size: 26rpx;
+  color: #999999;
+}
+.users-container .user-list .user-item.data-v-cecc39f2 {
+  margin: 0 30rpx 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.users-container .user-list .user-item.data-v-cecc39f2:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.03);
+}
+.users-container .user-list .user-item .user-info.data-v-cecc39f2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.users-container .user-list .user-item .user-info .avatar.data-v-cecc39f2 {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24rpx;
+  transition: all 0.3s ease;
+}
+.users-container .user-list .user-item .user-info .avatar .avatar-text.data-v-cecc39f2 {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.users-container .user-list .user-item .user-info .info.data-v-cecc39f2 {
+  flex: 1;
+}
+.users-container .user-list .user-item .user-info .info .name.data-v-cecc39f2 {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 8rpx;
+  display: block;
+}
+.users-container .user-list .user-item .user-info .info .phone.data-v-cecc39f2 {
+  font-size: 26rpx;
+  color: #999999;
+}
+.users-container .user-list .user-item .right-section.data-v-cecc39f2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.users-container .user-list .user-item .right-section .join-time.data-v-cecc39f2 {
+  font-size: 24rpx;
+  color: #999999;
+  margin-bottom: 8rpx;
+}
+.users-container .user-list .user-item .right-section .status-tag.data-v-cecc39f2 {
+  font-size: 24rpx;
+  padding: 6rpx 20rpx;
+  border-radius: 24rpx;
+  background-color: rgba(153, 153, 153, 0.1);
+  color: #999999;
+  transition: all 0.3s ease;
+}
+.users-container .user-list .user-item .right-section .status-tag.active.data-v-cecc39f2 {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52C41A;
+  font-weight: 500;
+}
+.users-container .empty-state.data-v-cecc39f2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 0;
+}
+.users-container .empty-state .empty-image.data-v-cecc39f2 {
+  width: 240rpx;
+  height: 240rpx;
+  margin-bottom: 30rpx;
+}
+.users-container .empty-state .empty-text.data-v-cecc39f2 {
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 12rpx;
+}
+.users-container .empty-state .empty-tips.data-v-cecc39f2 {
+  font-size: 26rpx;
+  color: #999999;
+}
+.animate__fadeIn.data-v-cecc39f2 {
+  -webkit-animation: fadeIn-data-v-cecc39f2 0.3s ease-in-out;
+          animation: fadeIn-data-v-cecc39f2 0.3s ease-in-out;
+}
+@-webkit-keyframes fadeIn-data-v-cecc39f2 {
+from {
+    opacity: 0;
+    -webkit-transform: translateY(20rpx);
+            transform: translateY(20rpx);
+}
+to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes fadeIn-data-v-cecc39f2 {
+from {
+    opacity: 0;
+    -webkit-transform: translateY(20rpx);
+            transform: translateY(20rpx);
+}
+to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+
